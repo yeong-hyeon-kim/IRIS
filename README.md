@@ -1,46 +1,41 @@
-# Getting Started with Create React App
+# 📕 Nopi Note
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> 리액트, 리덕스, 타입스크립트를 이용해 나만의 노트를 만듭니다.
 
-## Available Scripts
+## 🏷️ 기능(Function)
 
-In the project directory, you can run:
+프로젝트 기능을 작성합니다.
 
-### `npm start`
+## 💡 사용 예제(Usage Example)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+코드와 설명을 통해 사용 방법을 자세히 설명합니다.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 💻 개발 환경(Develop Environment)
 
-### `npm test`
+### 🧰 시스템 환경(System Environment)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+||운영체제(OS)|언어(Language)|프레임워크(Framework)|라이브러리(Library)
+|-|:-:|:-:|:-:|:-:|
+|명칭(Name)|![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat-square&logo=Windows&logoColor=white)|![TYPESCRIPT](https://img.shields.io/badge/TYPESCRIPT-3178C6?style=flat-square&logo=TypeScript&logoColor=white)|![REACT](https://img.shields.io/badge/REACT-61DAFB?style=flat-square&logo=React&logoColor=black)|![REDUX](https://img.shields.io/badge/REDUX-764ABC?style=flat-square&logo=Redux&logoColor=white)|
+|버전(Version)|`11`|`4.8.4`|`18.2.0`|`4.2.0`|
 
-### `npm run build`
+### 🌐 브라우저 지원(Browser Support)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+|Chrome|Microsoft Edge|Firefox|
+|:-:|:-:|:-:|
+|![Chrome](https://img.shields.io/badge/Chrome-4285F4?style=flat-square&logo=GoogleChrome&logoColor=white)|![MicrosoftEdge](https://img.shields.io/badge/Edge-0078D7?style=flat-square&logo=MicrosoftEdge&logoColor=white)|![Firefox](https://img.shields.io/badge/Firefox-FF7139?style=flat-square&logo=FirefoxBrowser&logoColor=white)
+|`Latest` ✔|`Latest` ✔|`Latest` ✔|
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🔍 정보(Information)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🖋️ 저자(Author)
 
-### `npm run eject`
+- [Yeonghyeon Kim](https://github.com/yeong-hyeon-kim) – codechemi@gmail.com
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### ⚖️ 라이센스(License)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- 다음 라이센스를 준수하며 [License](./License)에서 자세한 정보를 확인할 수 있습니다.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 📖 비고(Remark)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- 비고를 작성합니다.
