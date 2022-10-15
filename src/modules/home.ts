@@ -58,7 +58,6 @@ function Home(state: homeState = initState, action: actionHome): homeState {
       }
     }
     case ACTIVE: {
-      console.log(state);
       return {
         subject: state.subject,
         show: state.show,
