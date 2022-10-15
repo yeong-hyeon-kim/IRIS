@@ -24,7 +24,6 @@ let HomeContainer = () => {
   };
 
   const onActiveNavLink = (e: string) => {
-    console.log(e);
     dispatch(actionFuncActive(e));
   };
 
