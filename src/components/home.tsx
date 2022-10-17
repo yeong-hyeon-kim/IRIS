@@ -7,7 +7,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Badge from "react-bootstrap/Badge";
 import {
-  FileEarmark,
+  Folder,
   List,
   Gear,
   Bell,
@@ -59,7 +59,7 @@ function Home({
           <Nav variant="pills" activeKey={active} className="flex-column">
             <Nav.Item onMouseEnter={() => onActiveNavLink("1")}>
               <Nav.Link className="nav-links" eventKey="1">
-                <FileEarmark size={21}></FileEarmark> 문서
+                <Folder size={21}></Folder> 문서
               </Nav.Link>
             </Nav.Item>
             <Nav.Item onMouseEnter={() => onActiveNavLink("2")}>
