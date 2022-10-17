@@ -5,7 +5,7 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
-import Badge from 'react-bootstrap/Badge';
+import Badge from "react-bootstrap/Badge";
 import {
   FileEarmark,
   List,
@@ -33,11 +33,13 @@ function Home({
   return (
     <>
       <Navbar bg="primary" variant="dark">
-        <Container>
+        <Container fluid>
           <Navbar.Brand href="#home">NOPI NOTE</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="#home">홈</Nav.Link>
             <Nav.Link href="#features">기능</Nav.Link>
+          </Nav>
+          <Nav>
             <Nav.Item>
               <Button variant="primary" onClick={onOffCanvas}>
                 <List size={21}></List>
@@ -63,7 +65,9 @@ function Home({
             <Nav.Item onMouseEnter={() => onActiveNavLink("2")}>
               <Nav.Link className="nav-links" eventKey="2">
                 <Bell size={21}></Bell> 알림 &nbsp;
-                <Badge pill bg="danger">1</Badge>
+                <Badge pill bg="danger">
+                  1
+                </Badge>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item onMouseEnter={() => onActiveNavLink("3")}>
