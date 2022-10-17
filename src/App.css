@@ -8,3 +8,18 @@ li {
   display: flex;
   flex-direction: column;
 }
+
+.List {
+  margin: 15px;
+  height: 85vh;
+  width: auto;
+  overflow: auto;
+}
+
+.introduce{
+  /* background-color: #3381ff; */
+  /* color: #fff; */
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+}
