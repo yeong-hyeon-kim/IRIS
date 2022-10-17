@@ -1,8 +1,9 @@
 import { combineReducers } from "redux";
 import Home from "./home";
 import Link from "./link";
+import Introduce from "./introduce";
 
-const rootReducer = combineReducers({ Home, Link });
+const rootReducer = combineReducers({ Home, Introduce, Link });
 
 export default rootReducer;
 
