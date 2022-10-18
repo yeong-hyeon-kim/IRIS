@@ -1,12 +1,12 @@
-type IntroduceProps ={
+type IntroduceProps = {
   title: string;
   content: string;
-}
+};
 
-function Introduce({title, content}: IntroduceProps) {
+function Introduce({ title, content }: IntroduceProps) {
   return (
     <>
-      <article className="introduce">
+      <article className="Introduce">
         <h1>{title}</h1>
         <p>{content}</p>
       </article>
