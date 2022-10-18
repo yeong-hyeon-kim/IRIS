@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import Accordion from "react-bootstrap/Accordion";
 import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
@@ -36,8 +37,18 @@ function Home({
         <Container fluid>
           <Navbar.Brand href="#home">NOPI NOTE</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">홈</Nav.Link>
-            <Nav.Link href="#features">기능</Nav.Link>
+            {/* <Nav.Link href="#home">홈</Nav.Link>
+            <Nav.Link href="#features">기능</Nav.Link> */}
+            <Nav.Item className="nav-link">
+              <Link className="RouteLink me-auto" to="/">
+                홈
+              </Link>
+            </Nav.Item>
+            <Nav.Item className="nav-link">
+              <Link className="RouteLink me-auto" to="/link">
+                책갈피
+              </Link>
+            </Nav.Item>
           </Nav>
           <Nav>
             <Nav.Item>
