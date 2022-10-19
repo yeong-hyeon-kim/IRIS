@@ -34,7 +34,7 @@ type homeState = {
 const initState: homeState = {
   subject: "Silica Note",
   show: false,
-  active: "1",
+  active: "2",
 };
 
 /* 리듀서 */
