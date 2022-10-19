@@ -35,7 +35,7 @@ function Home({
     <>
       <Navbar bg="primary" variant="dark">
         <Container fluid>
-          <Navbar.Brand href="#home">NOPI NOTE</Navbar.Brand>
+          <Navbar.Brand href="#home">{subject}</Navbar.Brand>
           <Nav className="me-auto">
             {/* <Nav.Link href="#home">홈</Nav.Link>
             <Nav.Link href="#features">기능</Nav.Link> */}
@@ -68,11 +68,11 @@ function Home({
         </Offcanvas.Header>
         <Offcanvas.Body>
           <Nav variant="pills" activeKey={active} className="flex-column">
-            <Nav.Item onMouseEnter={() => onActiveNavLink("1")}>
+            {/* <Nav.Item onMouseEnter={() => onActiveNavLink("1")}>
               <Nav.Link className="nav-links" eventKey="1">
                 <Folder size={21}></Folder> 문서
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
             <Nav.Item onMouseEnter={() => onActiveNavLink("2")}>
               <Nav.Link className="nav-links" eventKey="2">
                 <Bell size={21}></Bell> 알림 &nbsp;
