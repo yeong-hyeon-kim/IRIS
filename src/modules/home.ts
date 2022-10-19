@@ -32,7 +32,7 @@ type homeState = {
 };
 /* 상태 초기화 */
 const initState: homeState = {
-  subject: "NOTE",
+  subject: "Silica Note",
   show: false,
   active: "1",
 };
