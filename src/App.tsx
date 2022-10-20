@@ -6,6 +6,7 @@ import Container from "react-bootstrap/Container";
 import HomeContainer from "./containers/homeContainer";
 import LinkContainer from "./containers/linkContainer";
 import IntroduceContainer from "./containers/introduceContainer";
+import SignInContainer from "./containers/signinContainer";
 function App() {
   function setScreenSize() {
     let vh = window.innerHeight * 0.01;
@@ -25,6 +26,10 @@ function App() {
             element={<IntroduceContainer></IntroduceContainer>}
           ></Route>
           <Route path="/Link" element={<LinkContainer></LinkContainer>}></Route>
+          <Route
+            path="/SingIn"
+            element={<SignInContainer></SignInContainer>}
+          ></Route>
         </Routes>
         <Container></Container>
       </BrowserRouter>
