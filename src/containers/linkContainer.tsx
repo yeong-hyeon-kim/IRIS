@@ -7,7 +7,9 @@ import { RootState } from "../modules";
 import Link from "../components/link";
 
 let LinkContainer = () => {
-  return <Link></Link>;
+  const LinkList = useSelector((state: RootState) => state.Link.list);
+
+  return <Link list={LinkList}></Link>;
 };
 
 export default LinkContainer;
