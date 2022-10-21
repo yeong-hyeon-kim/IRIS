@@ -10,17 +10,17 @@ function Link({ list }: Props) {
   return (
     <>
       <div className="List">
-        {list.map((data) => (
-          <ListGroup variant="flush">
-            <ListGroup.Item>
+        <ListGroup variant="flush" key="KEY">
+          {list.map((data) => (
+            <ListGroup.Item key={data.id.toString()}>
               <div className="ms-2 me-auto">
                 <div className="fw-bold">{data.title}</div>
                 <a href={data.content}>{data.content}</a>
                 <p>{data.id}</p>
               </div>
             </ListGroup.Item>
-          </ListGroup>
-        ))}
+          ))}
+        </ListGroup>
       </div>
     </>
   );
