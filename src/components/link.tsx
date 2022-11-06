@@ -1,6 +1,5 @@
 import { ITestData } from "../mock/ITestData";
 import ListGroup from "react-bootstrap/ListGroup";
-import Button from "react-bootstrap/Button";
 
 type Props = {
   list: ITestData[];

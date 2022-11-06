@@ -1,10 +1,10 @@
 import { getNoticeAsync, GET_NOTICE } from "./actions";
-import { getNoticeList, Notice } from "../../api/notice";
+import { getNoticeList, INotice } from "../../api/notice";
 import { call, put, takeEvery } from "redux-saga/effects";
 
 function* getNoticeSaga(action: ReturnType<typeof getNoticeAsync.request>) {
   try {
-    const appNotice: Notice = yield call(getNoticeList, action.payload);
+    const appNotice: INotice = yield call(getNoticeList, action.payload);
 
     console.log(appNotice);
 

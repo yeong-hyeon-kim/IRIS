@@ -7,7 +7,7 @@ import { RootState } from "../modules";
 import { actionFuncOffcanvas, actionFuncActive } from "../modules/home";
 // 컴포넌트 가져오기
 import Home from "../components/home";
-import { getNoticeAsync } from "../modules/home/";
+// import { getNoticeAsync } from "../modules/home/";
 
 let HomeContainer = () => {
   const subject = useSelector((state: RootState) => state.Home.subject);
@@ -22,19 +22,18 @@ let HomeContainer = () => {
 
   const onActiveNavLink = (e: string) => {
     dispatch(actionFuncActive(e));
-    console.log("test");
-    onSubmitUsername("test");
+    // onSubmitUsername("test");
   };
 
-  const onSubmitUsername = (username: string) => {
-    dispatch(getNoticeAsync.request(username));
-  };
+  // const onSubmitUsername = (username: string) => {
+  //   dispatch(getNoticeAsync.request(username));
+  // };
 
-  const { data, loading, error } = useSelector(
-    (state: RootState) => state.notice.appNotice
-  );
+  // const { data, loading, error } = useSelector(
+  //   (state: RootState) => state.notice.appNotice
+  // );
 
-  console.log(loading, error, data);
+  // console.log(loading, error, data);
 
   return (
     <Home

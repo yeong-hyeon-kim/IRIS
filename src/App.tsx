@@ -7,6 +7,7 @@ import HomeContainer from "./containers/homeContainer";
 import LinkContainer from "./containers/linkContainer";
 import IntroduceContainer from "./containers/introduceContainer";
 import SignInContainer from "./containers/signinContainer";
+import NoticeContainer from "./containers/noticeContainer";
 function App() {
   function setScreenSize() {
     let vh = window.innerHeight * 0.01;
@@ -35,6 +36,10 @@ function App() {
           <Route
             path="/SingIn"
             element={<SignInContainer></SignInContainer>}
+          ></Route>
+          <Route
+            path="/Notice"
+            element={<NoticeContainer></NoticeContainer>}
           ></Route>
         </Routes>
         <Container></Container>

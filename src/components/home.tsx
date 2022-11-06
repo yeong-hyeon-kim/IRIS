@@ -47,6 +47,11 @@ function Home({
                   책갈피
                 </Link>
               </Nav.Item>
+              <Nav.Item className="nav-link">
+                <Link className="RouteLink me-auto" to="/notice">
+                  공지사항
+                </Link>
+              </Nav.Item>
             </Nav>
             <Nav>
               <Nav.Item>
