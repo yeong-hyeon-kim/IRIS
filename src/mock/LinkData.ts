@@ -1,6 +1,6 @@
-import { ITestData } from "./ITestData";
+import { ILink } from "./ILink";
 
-export const Test: ITestData[] = [
+export const Test: ILink[] = [
   {
     id: 1,
     title: "REACT",

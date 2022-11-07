@@ -35,7 +35,7 @@ function Home({
       <header>
         <Navbar bg="primary" variant="dark">
           <Container fluid>
-            <Navbar.Brand href="#home">{subject}</Navbar.Brand>
+            <Navbar.Brand href="#">{subject}</Navbar.Brand>
             <Nav className="me-auto">
               <Nav.Item className="nav-link">
                 <Link className="RouteLink me-auto" to="/">

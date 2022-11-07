@@ -1,8 +1,8 @@
-import { ITestData } from "../mock/ITestData";
+import { ILink } from "../mock/ILink";
 import ListGroup from "react-bootstrap/ListGroup";
 
 type Props = {
-  list: ITestData[];
+  list: ILink[];
 };
 
 function Link({ list }: Props) {

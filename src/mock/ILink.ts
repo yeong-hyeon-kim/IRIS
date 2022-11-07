@@ -1,4 +1,4 @@
-export interface ITestData {
+export interface ILink {
   id: number;
   title: string;
   content: string;
