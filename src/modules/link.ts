@@ -1,6 +1,6 @@
 import { delay, put, takeEvery, takeLatest } from "redux-saga/effects";
-import { ITestData } from "../mock/ITestData";
-import { Test } from "../mock/TestData";
+import { ILink } from "../mock/ILink";
+import { Test } from "../mock/LinkData";
 
 const URL = "link/URL" as const;
 const LIST = "link/URL-LIST" as const;
@@ -22,7 +22,7 @@ type actionLink =
 /* 리덕스 상태 타입 정의 */
 type linkState = {
   url: string[];
-  list: ITestData[];
+  list: ILink[];
 };
 /* 상태 초기화 */
 const initState: linkState = {
