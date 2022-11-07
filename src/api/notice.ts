@@ -14,5 +14,5 @@ export interface INotice {
   id: string;
   title: string;
   content: string;
-  created: string;
+  createDt: string;
 }
