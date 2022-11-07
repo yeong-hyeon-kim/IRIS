@@ -21,8 +21,6 @@ let NoticeContainer = () => {
     onSubmitUsername("TEST");
   }, []);
 
-  console.log(data);
-
   if (data === undefined || data === null) {
     return <Notice id={""} title={""} content={""} createDt={""}></Notice>;
   } else {
@@ -32,7 +30,7 @@ let NoticeContainer = () => {
         id={KeyDatas.id}
         title={KeyDatas.title}
         content={KeyDatas.content}
-        createDt={KeyDatas.created}
+        createDt={KeyDatas.createDt}
       ></Notice>
     );
   }

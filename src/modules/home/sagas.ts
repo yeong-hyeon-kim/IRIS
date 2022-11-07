@@ -6,8 +6,6 @@ function* getNoticeSaga(action: ReturnType<typeof getNoticeAsync.request>) {
   try {
     const appNotice: INotice = yield call(getNoticeList, action.payload);
 
-    console.log(appNotice);
-
     yield put(getNoticeAsync.success(appNotice));
   } catch (e: any) {
     yield put(getNoticeAsync.failure(e));
