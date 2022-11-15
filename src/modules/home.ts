@@ -92,7 +92,7 @@ function Home(state: homeState = initState, action: actionHome): homeState {
         subject: state.subject,
         show: state.show,
         active: state.active,
-        theme: MainTheme,
+        theme: state.theme,
       };
     case OFFCANVAS: {
       if (state.show === false) {
@@ -100,14 +100,14 @@ function Home(state: homeState = initState, action: actionHome): homeState {
           subject: state.subject,
           show: (state.show = true),
           active: state.active,
-          theme: MainTheme,
+          theme: state.theme,
         };
       } else {
         return {
           subject: state.subject,
           show: (state.show = false),
           active: state.active,
-          theme: MainTheme,
+          theme: state.theme,
         };
       }
     }
@@ -116,7 +116,7 @@ function Home(state: homeState = initState, action: actionHome): homeState {
         subject: state.subject,
         show: state.show,
         active: (state.active = action.nav.active),
-        theme: MainTheme,
+        theme: state.theme,
       };
     }
     case THEME: {
