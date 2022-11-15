@@ -4,7 +4,11 @@ import { useSelector, useDispatch } from "react-redux";
 // 루트 리듀서 가져오기
 import { RootState } from "../modules";
 // 액션 함수 가져오기
-import { actionFuncOffcanvas, actionFuncActive } from "../modules/home";
+import {
+  actionFuncOffcanvas,
+  actionFuncActive,
+  actionFuncTheme,
+} from "../modules/home";
 // 컴포넌트 가져오기
 import Home from "../components/home";
 // import { getNoticeAsync } from "../modules/home/";
@@ -13,35 +17,32 @@ let HomeContainer = () => {
   const subject = useSelector((state: RootState) => state.Home.subject);
   const show = useSelector((state: RootState) => state.Home.show);
   const active = useSelector((state: RootState) => state.Home.active);
+  const theme = useSelector((state: RootState) => state.Home.theme);
 
   // Button Action
   const dispatch = useDispatch();
+
+  const setTheme = () => {
+    dispatch(actionFuncTheme());
+  };
+
   const onOffcanvas = () => {
     dispatch(actionFuncOffcanvas());
   };
 
   const onActiveNavLink = (e: string) => {
     dispatch(actionFuncActive(e));
-    // onSubmitUsername("test");
   };
-
-  // const onSubmitUsername = (username: string) => {
-  //   dispatch(getNoticeAsync.request(username));
-  // };
-
-  // const { data, loading, error } = useSelector(
-  //   (state: RootState) => state.notice.appNotice
-  // );
-
-  // console.log(loading, error, data);
 
   return (
     <Home
-      subject={subject}
-      onOffCanvas={onOffcanvas}
       show={show}
-      onActiveNavLink={onActiveNavLink}
+      subject={subject}
       active={active}
+      theme={theme.value}
+      setTheme={setTheme}
+      onOffCanvas={onOffcanvas}
+      onActiveNavLink={onActiveNavLink}
     ></Home>
   );
 };
