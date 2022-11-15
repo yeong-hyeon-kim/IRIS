@@ -14,7 +14,7 @@ li {
 }
 
 .List {
-  height: calc(var(--vh, 1vh) * 90);
+  height: calc(var(--vh, 1vh) * 80);
   /* height: 100vh; */
   width: auto;
   overflow: auto;

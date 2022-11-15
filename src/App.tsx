@@ -10,29 +10,10 @@ import SignInContainer from "./containers/signinContainer";
 import NoticeContainer from "./containers/noticeContainer";
 import { ThemeProvider } from "styled-components";
 import StyledLayout, { StyledButton } from "./style/componets/toggle";
+import { useSelector, useDispatch } from "react-redux";
+import { RootState } from "./modules";
 
 function App() {
-  const lightTheme = {
-    value: "light",
-    style: {
-      backgroundColor: "#ffffff",
-      color: "#343a40",
-    },
-  };
-
-  const darkTheme = {
-    value: "dark",
-    style: {
-      backgroundColor: "#343a40",
-      color: "#ffffff",
-    },
-  };
-
-  const [theme, setTheme] = useState(lightTheme);
-  const toggleTheme = () => {
-    setTheme(theme.value === "light" ? darkTheme : lightTheme);
-  };
-
   function setScreenSize() {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty("--vh", `${vh}px`);
@@ -46,6 +27,8 @@ function App() {
   useEffect(() => {
     setScreenSize();
   });
+
+  const theme = useSelector((state: RootState) => state.Home.theme);
 
   return (
     <div>
@@ -73,9 +56,6 @@ function App() {
             </Routes>
             <Container></Container>
           </BrowserRouter>
-          <StyledButton onClick={toggleTheme} variant={"primary"}>
-            SetTheme!
-          </StyledButton>
         </StyledLayout>
       </ThemeProvider>
     </div>

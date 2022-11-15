@@ -13,22 +13,29 @@ import {
   Bell,
   FileEarmarkPlus,
   Person,
+  Sun,
+  Moon,
+  MoonStars,
 } from "react-bootstrap-icons";
 
 type HomeProps = {
   subject: string;
   show: boolean;
   active: string;
+  theme: string;
+  setTheme: () => void;
   onOffCanvas: () => void;
   onActiveNavLink: (e: string) => any;
 };
 
 function Home({
   subject,
-  onOffCanvas,
   show,
-  onActiveNavLink,
   active,
+  theme,
+  setTheme,
+  onOffCanvas,
+  onActiveNavLink,
 }: HomeProps) {
   return (
     <>
@@ -57,6 +64,17 @@ function Home({
               <Nav.Item>
                 <Button variant="primary" onClick={onOffCanvas}>
                   <List size={21}></List>
+                </Button>
+              </Nav.Item>
+            </Nav>
+            <Nav>
+              <Nav.Item>
+                <Button variant="primary" onClick={setTheme}>
+                  {theme === "light" ? (
+                    <Sun size={21}></Sun>
+                  ) : (
+                    <MoonStars size={21}></MoonStars>
+                  )}
                 </Button>
               </Nav.Item>
             </Nav>
