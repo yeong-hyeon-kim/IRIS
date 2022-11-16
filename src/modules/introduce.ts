@@ -1,3 +1,4 @@
+/* 액션 타입 */
 const ARTICLE = "introduce/Article" as const;
 
 /* 액션 함수 */
@@ -15,15 +16,15 @@ type stateType = {
 };
 /* 상태 초기화 */
 const initState: stateType = {
-  title :"안녕하세요!",
-  content : "지금은 개발 중이라 더 좋은 기능으로 찾아뵐께요!"
+  title: "안녕하세요!",
+  content: "지금은 개발 중이라 더 좋은 기능으로 찾아뵐께요!",
 };
 
 /* 리듀서 */
 function Link(state: stateType = initState, action: actionArticle): stateType {
   switch (action.type) {
     case ARTICLE:
-      return {title: state.title, content : state.content}
+      return { title: state.title, content: state.content };
     default:
       return state;
   }
