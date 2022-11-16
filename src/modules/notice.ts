@@ -1,3 +1,4 @@
+/* 액션 타입 */
 const NOTICE = "notice/List" as const;
 
 /* 액션 함수 */

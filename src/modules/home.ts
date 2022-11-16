@@ -1,5 +1,6 @@
 import { delay, put, takeEvery } from "redux-saga/effects";
 
+/* 액션 타입 */
 const SUBJECT = "home/SUBJECT" as const;
 const OFFCANVAS = "home/OFFCANVAS" as const;
 const ACTIVE = "home/ACTIVE" as const;

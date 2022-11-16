@@ -1,3 +1,4 @@
+/* 액션 타입 */
 const URL = "link/URL" as const;
 
 /* 액션 함수 */

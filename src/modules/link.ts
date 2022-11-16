@@ -2,6 +2,7 @@ import { delay, put, takeEvery, takeLatest } from "redux-saga/effects";
 import { ILink } from "../mock/ILink";
 import { Test } from "../mock/LinkData";
 
+/* 액션 타입 */
 const URL = "link/URL" as const;
 const LIST = "link/URL-LIST" as const;
 
