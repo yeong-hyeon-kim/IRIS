@@ -14,7 +14,6 @@ import {
   FileEarmarkPlus,
   Person,
   Sun,
-  Moon,
   MoonStars,
 } from "react-bootstrap-icons";
 
