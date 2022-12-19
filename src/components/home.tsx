@@ -36,6 +36,19 @@ function Home({
   onOffCanvas,
   onActiveNavLink,
 }: HomeProps) {
+  let ObjectTheme;
+  if (theme === "light") {
+    ObjectTheme = {
+      background: '#FFFFFF',
+      color: '#000000'
+    };
+  } else {
+    ObjectTheme = {
+      background: '#343A40',
+      color: '#FFFFFF'
+    };
+  }
+
   return (
     <>
       <header>
@@ -80,7 +93,7 @@ function Home({
           </Container>
         </Navbar>
         {/* Offcanvas */}
-        <Offcanvas id="HomeOffcanvas" show={show} onHide={onOffCanvas}>
+        <Offcanvas id="HomeOffcanvas" show={show} onHide={onOffCanvas} style={ObjectTheme}>
           <Offcanvas.Header closeButton>
             <Offcanvas.Title>
               <Person></Person> 이나님의 페이지
