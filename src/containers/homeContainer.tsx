@@ -1,4 +1,4 @@
-import React from "react";
+import React , { useEffect } from "react";
 // 상태 조회, 디스패쳐 발생 모듈
 import { useSelector, useDispatch } from "react-redux";
 // 루트 리듀서 가져오기
@@ -8,6 +8,7 @@ import {
   actionFuncOffcanvas,
   actionFuncActive,
   actionFuncTheme,
+  actionFuncStoragedTheme,
 } from "../modules/home";
 // 컴포넌트 가져오기
 import Home from "../components/home";
@@ -25,6 +26,15 @@ let HomeContainer = () => {
   const setTheme = () => {
     dispatch(actionFuncTheme());
   };
+
+  const defalutTheme = () =>{
+    let theme = localStorage.getItem("theme");
+    dispatch(actionFuncStoragedTheme(theme));
+  };
+
+  useEffect(() => {
+    defalutTheme();
+  }, []);
 
   const onOffcanvas = () => {
     dispatch(actionFuncOffcanvas());
