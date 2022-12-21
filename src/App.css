@@ -1,10 +1,11 @@
-:root {
-  --vh: 100%;
-}
 
 li {
   list-style: none
 }
+
+/* Nav{
+  font-size: calc(5px + 2vmin);
+} */
 
 .Home {
   width: 100vw;
@@ -14,7 +15,7 @@ li {
 }
 
 .List {
-  height: calc(var(--vh, 1vh) * 80);
+  height: calc(var(--vh, 1vh) * 85);
   /* height: 100vh; */
   width: auto;
   overflow: auto;

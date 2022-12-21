@@ -52,7 +52,7 @@ function Home({
   return (
     <>
       <header>
-        <Navbar bg="primary" variant="dark">
+        <Navbar bg="primary" variant="dark" expand={'sm'}>
           <Container fluid>
             <Navbar.Brand href="#">{subject}</Navbar.Brand>
             <Nav className="me-auto">
