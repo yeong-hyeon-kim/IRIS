@@ -1,5 +1,3 @@
-import { delay, put, takeEvery } from "redux-saga/effects";
-
 /* 액션 타입 */
 const SUBJECT = "home/SUBJECT" as const;
 const OFFCANVAS = "home/OFFCANVAS" as const;
@@ -25,6 +23,12 @@ export const actionFuncActive = (e: string) => ({
 /* Redux Saga */
 export const actionFuncTheme = () => ({
   type: THEME,
+  storaged: null
+});
+
+export const actionFuncStoragedTheme = (theme: string | null) => ({
+  type: THEME,
+  storaged: theme
 });
 
 // 컨테이너에서 호출
@@ -43,7 +47,8 @@ type actionHome =
   | ReturnType<typeof actionFuncSubject>
   | ReturnType<typeof actionFuncOffcanvas>
   | ReturnType<typeof actionFuncActive>
-  | ReturnType<typeof actionFuncTheme>;
+  | ReturnType<typeof actionFuncTheme>
+  | ReturnType<typeof actionFuncStoragedTheme>;
 
 /* 리덕스 상태 타입 정의 */
 type homeState = {
@@ -85,7 +90,8 @@ const initState: homeState = {
 
 /* 리듀서 */
 function Home(state: homeState = initState, action: actionHome): homeState {
-  const MainTheme = state.theme.value === "light" ? darkTheme : lightTheme;
+  let MainTheme = state.theme.value === "light" ? darkTheme : lightTheme;
+  // let DefaultTheme = 
 
   switch (action.type) {
     case SUBJECT:
@@ -121,7 +127,16 @@ function Home(state: homeState = initState, action: actionHome): homeState {
       };
     }
     case THEME: {
+      if (action.storaged !== null) {
+        if (action.storaged === "light") {
+          MainTheme = darkTheme
+        } else if(action.storaged === "dark") {
+          MainTheme = lightTheme
+        }
+      }
+
       console.log("Action Theme..", state.theme, MainTheme);
+
       return {
         subject: state.subject,
         show: state.show,

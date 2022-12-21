@@ -4,8 +4,8 @@ import Home from "./home";
 import Link from "./link";
 import Notice from "./notice";
 import NoticeReducerSaga from "../modules/home/reducer";
-import { NoticeSaga } from "../modules/home/";
 import SingIn from "./sing_in";
+import { NoticeSaga } from "../modules/home/";
 import { all } from "redux-saga/effects";
 
 const rootReducer = combineReducers({ Home, Introduce, Link, Notice ,SingIn, NoticeReducerSaga });
