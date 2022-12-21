@@ -11,7 +11,7 @@ const initialState: NoticeState = {
   },
 };
 
-const notice = createReducer<NoticeState, NoticeAction>(initialState, {
+const NoticeReducerSaga = createReducer<NoticeState, NoticeAction>(initialState, {
   [GET_NOTICE]: (state) => ({
     ...state,
     appNotice: {
@@ -38,4 +38,4 @@ const notice = createReducer<NoticeState, NoticeAction>(initialState, {
   }),
 });
 
-export default notice;
+export default NoticeReducerSaga;

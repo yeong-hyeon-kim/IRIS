@@ -12,6 +12,6 @@ function* getNoticeSaga(action: ReturnType<typeof getNoticeAsync.request>) {
   }
 }
 
-export function* noticeSaga() {
+export function* NoticeSaga() {
   yield takeEvery(GET_NOTICE, getNoticeSaga);
 }

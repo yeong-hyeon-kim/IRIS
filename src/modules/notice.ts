@@ -1,3 +1,6 @@
+import { INotice } from "../api/notice";
+import { Test } from "../mock/NoticeData";
+
 /* 액션 타입 */
 const NOTICE = "notice/List" as const;
 
@@ -11,24 +14,20 @@ type actionNotice = ReturnType<typeof actionFuncNotice>;
 
 /* 리덕스 상태 타입 정의 */
 type stateType = {
-  title: string;
-  content: string;
+  list: INotice[],
 };
 
 /* 상태 초기화 */
 const initState: stateType = {
-  title: "안녕하세요!",
-  content: "지금은 개발 중이라 더 좋은 기능으로 찾아뵐께요!",
+  list: Test,
 };
 
 /* 리듀서 */
-function Link(state: stateType = initState, action: actionNotice): stateType {
+function Notice(state: stateType = initState, action: actionNotice): stateType {
   switch (action.type) {
-    case NOTICE:
-      return { title: state.title, content: state.content };
     default:
       return state;
   }
 }
 
-export default Link;
+export default Notice;
