@@ -7,6 +7,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Badge from "react-bootstrap/Badge";
+import { lightTheme, darkTheme } from "../style/componets/theme";
 import {
   List,
   Gear,
@@ -38,21 +39,15 @@ function Home({
 }: HomeProps) {
   let ObjectTheme;
   if (theme === "light") {
-    ObjectTheme = {
-      background: '#FFFFFF',
-      color: '#000000'
-    };
+    ObjectTheme = lightTheme.style;
   } else {
-    ObjectTheme = {
-      background: '#343A40',
-      color: '#FFFFFF'
-    };
+    ObjectTheme = darkTheme.style;
   }
 
   return (
     <>
       <header>
-        <Navbar bg="primary" variant="dark" expand={'sm'}>
+        <Navbar id="NAV" bg="primary" variant="dark" expand={'sm'}>
           <Container fluid>
             <Navbar.Brand href="#">{subject}</Navbar.Brand>
             <Nav className="me-auto">
@@ -117,7 +112,7 @@ function Home({
               <hr></hr>
               <Nav.Item onMouseEnter={() => onActiveNavLink("4")}>
                 {/* Accordion */}
-                <Accordion defaultActiveKey={["0"]} alwaysOpen>
+                {/* <Accordion defaultActiveKey={["0"]} alwaysOpen>
                   <Accordion.Item eventKey="0">
                     <Accordion.Header>페이지</Accordion.Header>
                     <Accordion.Body>하위 페이지</Accordion.Body>
@@ -126,7 +121,7 @@ function Home({
                     <Accordion.Header>페이지</Accordion.Header>
                     <Accordion.Body>하위 페이지</Accordion.Body>
                   </Accordion.Item>
-                </Accordion>
+                </Accordion> */}
                 <hr></hr>
               </Nav.Item>
               <Nav.Item onMouseEnter={() => onActiveNavLink("5")}>

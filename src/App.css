@@ -1,22 +1,23 @@
-
 li {
   list-style: none
 }
 
-/* Nav{
-  font-size: calc(5px + 2vmin);
-} */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+}
 
 .Home {
-  width: 100vw;
-  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   display: flex;
   flex-direction: column;
 }
 
 .List {
-  height: calc(var(--vh, 1vh) * 85);
-  /* height: 100vh; */
+  /* --variable이 정의되지 않았다면 value로 표시 */
+  /* var(--variable, value) */
+  height: calc((var(--vh, 1vh) * 100) - var(--nav, 1vh));
   width: auto;
   overflow: auto;
 }

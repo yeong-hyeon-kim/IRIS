@@ -1,3 +1,5 @@
+import { lightTheme, darkTheme } from "../style/componets/theme";
+
 /* 액션 타입 */
 const SUBJECT = "home/SUBJECT" as const;
 const OFFCANVAS = "home/OFFCANVAS" as const;
@@ -31,17 +33,6 @@ export const actionFuncStoragedTheme = (theme: string | null) => ({
   storaged: theme
 });
 
-// 컨테이너에서 호출
-// function* themeSaga() {
-//   // put은 특정 액션을 디스패치 해줍니다.
-//   yield put(actionFuncTheme());
-// }
-
-// export function* homeSaga() {
-//   // 모든 THEME 액션을 처리
-//   yield takeEvery(THEME, themeSaga);
-// }
-
 /* 모든 액션 타입 정의 */
 type actionHome =
   | ReturnType<typeof actionFuncSubject>
@@ -62,22 +53,6 @@ type homeState = {
       color: string;
     };
   };
-};
-
-const lightTheme = {
-  value: "light",
-  style: {
-    backgroundColor: "#ffffff",
-    color: "#343a40",
-  },
-};
-
-const darkTheme = {
-  value: "dark",
-  style: {
-    backgroundColor: "#343a40",
-    color: "#ffffff",
-  },
 };
 
 /* 상태 초기화 */
@@ -130,7 +105,7 @@ function Home(state: homeState = initState, action: actionHome): homeState {
       if (action.storaged !== null) {
         if (action.storaged === "light") {
           MainTheme = darkTheme
-        } else if(action.storaged === "dark") {
+        } else if (action.storaged === "dark") {
           MainTheme = lightTheme
         }
       }

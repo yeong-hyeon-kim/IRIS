@@ -13,7 +13,7 @@ function Link({ list }: Props) {
         {list.map((data) => (
           <ListGroup.Item key={data.id.toString()}>
             <div className="ms-2 me-auto">
-              <div className="fw-bold">{data.title}</div>
+              <div>{data.title}</div>
               <a href={data.content}>{data.content}</a>
               <p>{data.id}</p>
             </div>

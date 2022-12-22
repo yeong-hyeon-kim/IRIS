@@ -18,7 +18,10 @@ function App() {
 
   function setScreenSize() {
     let vh = window.innerHeight * 0.01;
+    let nav = document.getElementById("NAV")?.clientHeight;
+
     document.documentElement.style.setProperty("--vh", `${vh}px`);
+    document.documentElement.style.setProperty("--nav", `${nav}px`);
   }
 
   window.addEventListener('resize', () => setScreenSize());

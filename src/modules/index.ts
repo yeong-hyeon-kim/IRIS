@@ -8,7 +8,7 @@ import SingIn from "./sing_in";
 import { NoticeSaga } from "../modules/home/";
 import { all } from "redux-saga/effects";
 
-const rootReducer = combineReducers({ Home, Introduce, Link, Notice ,SingIn, NoticeReducerSaga });
+const rootReducer = combineReducers({ Home, Introduce, Link, Notice, SingIn, NoticeReducerSaga });
 
 // 루트 리듀서 내보내기
 export default rootReducer;
