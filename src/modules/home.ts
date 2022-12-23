@@ -1,4 +1,4 @@
-import { lightTheme, darkTheme } from "../style/componets/theme";
+import { lightTheme, darkTheme, ITheme } from "../style/componets/theme";
 
 /* 액션 타입 */
 const SUBJECT = "home/SUBJECT" as const;
@@ -46,13 +46,7 @@ type homeState = {
   subject: string;
   show: boolean;
   active: string;
-  theme: {
-    value: string;
-    style: {
-      backgroundColor: string;
-      color: string;
-    };
-  };
+  theme: ITheme;
 };
 
 /* 상태 초기화 */
