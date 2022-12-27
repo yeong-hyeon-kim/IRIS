@@ -1,7 +1,6 @@
 # 📕 실리카 노트(Silica Note)
 
-* Front-End를 작성합니다
-* 리액트(React), 리덕스(Redux), 사가(React-Saga), 타입스크립트(Typescript)를 사용합니다.
+* 리액트(React), 타입스크립트(Typescript)를 사용하여 Front-End를 작성합니다
 
 ## 🏷️ 기능(Function)
 
@@ -15,10 +14,18 @@
 
 ### 🧰 시스템 환경(System Environment)
 
-||운영체제(OS)|언어(Language)|프레임워크(Framework)|라이브러리(Library)
+||운영체제(OS)|언어(Language)|프레임워크(Framework)|종속성(Dependency)|
 |-|:-:|:-:|:-:|:-:|
-|명칭(Name)|![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat-square&logo=Windows&logoColor=white)|![TYPESCRIPT](https://img.shields.io/badge/TYPESCRIPT-3178C6?style=flat-square&logo=TypeScript&logoColor=white)|![REACT](https://img.shields.io/badge/REACT-61DAFB?style=flat-square&logo=React&logoColor=black)|![REDUX](https://img.shields.io/badge/REDUX-764ABC?style=flat-square&logo=Redux&logoColor=white)|
-|버전(Version)|`11`|`4.8.4`|`18.2.0`|`4.2.0`|
+|명칭(Name)|![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat-square&logo=Windows&logoColor=white)|![TYPESCRIPT](https://img.shields.io/badge/TYPESCRIPT-3178C6?style=flat-square&logo=TypeScript&logoColor=white)|![REACT](https://img.shields.io/badge/REACT-61DAFB?style=flat-square&logo=React&logoColor=black)|![YARN](https://img.shields.io/badge/YARN-2C8EBB?style=flat-square&logo=yarn&logoColor=white)
+|버전(Version)|`11`|`4.8.4`|`18.2.0`|[YARN](./yarn.lock)
+
+### 🗂️ 라이브러리(Libraries)
+
+|명칭(Name)|버전(Version)|
+|:-|:-:|
+|![REDUX](https://img.shields.io/badge/REDUX-764ABC?style=flat-square&logo=Redux&logoColor=white)|`4.2.0`|
+|![REACT-SAGA](https://img.shields.io/badge/REACT_SAGA-999999?style=flat-square&logo=Redux-Saga&logoColor=white)|`1.2.1`|
+|![STYLED-COMPONENTS](https://img.shields.io/badge/STYLED_COMPONENTS-DB7093?style=flat-square&logo=styled-components&logoColor=white)|`5.1.26`|
 
 ### 🌐 브라우저 지원(Browser Support)
 
