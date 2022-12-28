@@ -91,7 +91,7 @@ function Home({
         <Offcanvas id="HomeOffcanvas" show={show} onHide={onOffCanvas} style={ObjectTheme}>
           <Offcanvas.Header closeButton>
             <Offcanvas.Title>
-              <Person></Person> 이나님의 페이지
+              Silica Note
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
