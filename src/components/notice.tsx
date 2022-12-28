@@ -1,3 +1,5 @@
+import NoticeArticle from "../style/componets/notice";
+
 type Props = {
   id: string;
   title: string;
@@ -9,7 +11,7 @@ function Notice({ id, title, content, createDt }: Props) {
   return (
     <>
       <div>
-        <article className="Introduce">
+        <NoticeArticle className="Introduce">
           <div className="ms-2 me-auto">
             <div className="fw-bold">
               <h2>{title}</h2>
@@ -17,7 +19,7 @@ function Notice({ id, title, content, createDt }: Props) {
             <p>{content}</p>
             <p>{createDt}</p>
           </div>
-        </article>
+        </NoticeArticle>
       </div>
     </>
   );

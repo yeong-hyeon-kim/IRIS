@@ -1,5 +1,6 @@
 import { ILink } from "../mock/ILink";
 import ListGroup from "react-bootstrap/ListGroup";
+import ListItem from "../style/componets/list";
 
 type Props = {
   list: ILink[];
@@ -12,11 +13,11 @@ function Link({ list }: Props) {
         <hr></hr>
         {list.map((data) => (
           <ListGroup.Item key={data.id.toString()}>
-            <div className="ms-2 me-auto">
-              <div>{data.title}</div>
+            <ListItem>
+              <h4>{data.title}</h4>
               <a href={data.content}>{data.content}</a>
               <p>{data.id}</p>
-            </div>
+            </ListItem>
             <hr></hr>
           </ListGroup.Item>
         ))}
