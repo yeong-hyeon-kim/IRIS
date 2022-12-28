@@ -1,3 +1,5 @@
+import IntroduceArticle from "../style/componets/introduce";
+
 type IntroduceProps = {
   title: string;
   content: string;
@@ -6,10 +8,10 @@ type IntroduceProps = {
 function Introduce({ title, content }: IntroduceProps) {
   return (
     <>
-      <article className="Introduce">
-        <h1>{title}</h1>
-        <p>{content}</p>
-      </article>
+      <IntroduceArticle>
+          <h1>{title}</h1>
+          <p>{content}</p>
+      </IntroduceArticle>
     </>
   );
 }
