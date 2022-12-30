@@ -47,7 +47,7 @@ function Home({
   return (
     <>
       <header>
-        <Navbar id="NAV" bg="primary" variant="dark" expand={'sm'}>
+        <Navbar id="NAV" bg="primary" variant="dark" expand={"sm"}>
           <Container fluid>
             <Navbar.Brand href="#">{subject}</Navbar.Brand>
             <Nav className="me-auto">
@@ -88,20 +88,23 @@ function Home({
           </Container>
         </Navbar>
         {/* Offcanvas */}
-        <Offcanvas id="HomeOffcanvas" show={show} onHide={onOffCanvas} style={ObjectTheme}>
+        <Offcanvas
+          id="HomeOffcanvas"
+          show={show}
+          onHide={onOffCanvas}
+          style={ObjectTheme}
+        >
           <Offcanvas.Header closeButton>
-            <Offcanvas.Title>
-              Silica Note
-            </Offcanvas.Title>
+            <Offcanvas.Title>Silica Note</Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav variant="pills" activeKey={active} className="flex-column">
               <Nav.Item onMouseEnter={() => onActiveNavLink("2")}>
                 <Nav.Link className="nav-links" eventKey="2">
                   <Bell size={21}></Bell> 알림 &nbsp;
-                  <Badge pill bg="danger">
+                  {/* <Badge pill bg="danger">
                     1
-                  </Badge>
+                  </Badge> */}
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item onMouseEnter={() => onActiveNavLink("3")}>
@@ -109,10 +112,10 @@ function Home({
                   <Gear size={21}></Gear> 설정
                 </Nav.Link>
               </Nav.Item>
-              <hr></hr>
+              {/* Accordion */}
+              {/* <hr></hr>
               <Nav.Item onMouseEnter={() => onActiveNavLink("4")}>
-                {/* Accordion */}
-                {/* <Accordion defaultActiveKey={["0"]} alwaysOpen>
+                <Accordion defaultActiveKey={["0"]} alwaysOpen>
                   <Accordion.Item eventKey="0">
                     <Accordion.Header>페이지</Accordion.Header>
                     <Accordion.Body>하위 페이지</Accordion.Body>
@@ -121,9 +124,10 @@ function Home({
                     <Accordion.Header>페이지</Accordion.Header>
                     <Accordion.Body>하위 페이지</Accordion.Body>
                   </Accordion.Item>
-                </Accordion> */}
+                </Accordion>
                 <hr></hr>
-              </Nav.Item>
+              </Nav.Item> */}
+              <hr></hr>
               <Nav.Item onMouseEnter={() => onActiveNavLink("5")}>
                 <Nav.Link className="nav-links" eventKey="5">
                   <FileEarmarkPlus size={21}></FileEarmarkPlus> 페이지 추가
