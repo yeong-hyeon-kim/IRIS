@@ -24,7 +24,7 @@ function App() {
     document.documentElement.style.setProperty("--nav", `${nav}px`);
   }
 
-  window.addEventListener('resize', () => setScreenSize());
+  window.addEventListener("resize", () => setScreenSize());
 
   useEffect(() => {
     setScreenSize();

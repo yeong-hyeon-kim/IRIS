@@ -9,8 +9,8 @@ function Introduce({ title, content }: IntroduceProps) {
   return (
     <>
       <IntroduceArticle>
-          <h1>{title}</h1>
-          <p>{content}</p>
+        <h1>{title}</h1>
+        <p>{content}</p>
       </IntroduceArticle>
     </>
   );
