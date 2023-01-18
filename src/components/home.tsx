@@ -66,6 +66,11 @@ function Home({
                   공지사항
                 </Link>
               </Nav.Item>
+              <Nav.Item className="nav-link">
+                <Link className="RouteLink me-auto" to="/task">
+                  프로젝트
+                </Link>
+              </Nav.Item>
             </Nav>
             <Nav>
               <Nav.Item>
