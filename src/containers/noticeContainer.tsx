@@ -13,15 +13,15 @@ let NoticeContainer = () => {
   // );
 
   // const dispatch = useDispatch();
-  
+
   // const onSubmitUsername = (username: string) => {
   //   dispatch(getNoticeAsync.request(username));
   // };
-  
+
   // useEffect(() => {
-    //   onSubmitUsername("TEST");
-    // }, []);
-    
+  //   onSubmitUsername("TEST");
+  // }, []);
+
   // if (data === undefined || data === null) {
   //   return <Notice id={""} title={""} content={""} createDt={""}></Notice>;
   // } else {
@@ -37,7 +37,14 @@ let NoticeContainer = () => {
   // }
 
   const NoticeList = useSelector((state: RootState) => state.Notice.list);
-  return <Notice id={NoticeList[0].id} title={NoticeList[0].title} content={NoticeList[0].content} createDt={NoticeList[0].createDt}></Notice>;
+  return (
+    <Notice
+      id={NoticeList[0].id}
+      title={NoticeList[0].title}
+      content={NoticeList[0].content}
+      createDt={NoticeList[0].createDt}
+    ></Notice>
+  );
 };
 
 export default NoticeContainer;

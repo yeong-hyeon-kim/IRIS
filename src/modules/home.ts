@@ -25,12 +25,12 @@ export const actionFuncActive = (e: string) => ({
 /* Redux Saga */
 export const actionFuncTheme = () => ({
   type: THEME,
-  storaged: null
+  storaged: null,
 });
 
 export const actionFuncStoragedTheme = (theme: string | null) => ({
   type: THEME,
-  storaged: theme
+  storaged: theme,
 });
 
 /* 모든 액션 타입 정의 */
@@ -60,7 +60,7 @@ const initState: homeState = {
 /* 리듀서 */
 function Home(state: homeState = initState, action: actionHome): homeState {
   let MainTheme = state.theme.value === "light" ? darkTheme : lightTheme;
-  // let DefaultTheme = 
+  // let DefaultTheme =
 
   switch (action.type) {
     case SUBJECT:
@@ -98,9 +98,9 @@ function Home(state: homeState = initState, action: actionHome): homeState {
     case THEME: {
       if (action.storaged !== null) {
         if (action.storaged === "light") {
-          MainTheme = darkTheme
+          MainTheme = darkTheme;
         } else if (action.storaged === "dark") {
-          MainTheme = lightTheme
+          MainTheme = lightTheme;
         }
       }
 

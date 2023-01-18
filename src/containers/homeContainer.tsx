@@ -1,4 +1,4 @@
-import React , { useEffect } from "react";
+import React, { useEffect } from "react";
 // 상태 조회, 디스패쳐 발생 모듈
 import { useSelector, useDispatch } from "react-redux";
 // 루트 리듀서 가져오기
@@ -27,7 +27,7 @@ let HomeContainer = () => {
     dispatch(actionFuncTheme());
   };
 
-  const defalutTheme = () =>{
+  const defalutTheme = () => {
     let theme = localStorage.getItem("theme");
     dispatch(actionFuncStoragedTheme(theme));
   };
