@@ -11,20 +11,18 @@ type actionTask = ReturnType<typeof actionFuncTask>;
 
 /* 리덕스 상태 타입 정의 */
 type stateType = {
-  title: string;
-  content: string;
+  isDragging: boolean
 };
 /* 상태 초기화 */
 const initState: stateType = {
-  title: "Front-End",
-  content: "REACT TypeScript",
+  isDragging: true,
 };
 
 /* 리듀서 */
 function Task(state: stateType = initState, action: actionTask): stateType {
   switch (action.type) {
     case TASK:
-      return { title: state.title, content: state.content };
+      return { isDragging: true};
     default:
       return state;
   }
