@@ -3,15 +3,20 @@ import React from "react";
 import { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Container from "react-bootstrap/Container";
+import { ThemeProvider } from "styled-components";
+import { useSelector, useDispatch } from "react-redux";
+
+import { RootState } from "./modules";
+/* 컨테이너 */
 import HomeContainer from "./containers/homeContainer";
 import LinkContainer from "./containers/linkContainer";
 import IntroduceContainer from "./containers/introduceContainer";
 import SignInContainer from "./containers/signinContainer";
 import NoticeContainer from "./containers/noticeContainer";
-import { ThemeProvider } from "styled-components";
+import TaskContainer from "./containers/taskContainer";
+
+/* Styled Components */
 import StyledLayout from "./style/componets/toggle";
-import { useSelector, useDispatch } from "react-redux";
-import { RootState } from "./modules";
 
 function App() {
   const theme = useSelector((state: RootState) => state.Home.theme);
@@ -58,6 +63,10 @@ function App() {
               <Route
                 path="/Notice"
                 element={<NoticeContainer></NoticeContainer>}
+              ></Route>
+              <Route
+                path="/Task"
+                element={<TaskContainer></TaskContainer>}
               ></Route>
             </Routes>
             <Container></Container>
