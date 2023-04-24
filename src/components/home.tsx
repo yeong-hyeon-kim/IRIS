@@ -6,14 +6,12 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
-import Badge from "react-bootstrap/Badge";
 import { lightTheme, darkTheme } from "../style/componets/theme";
 import {
   List,
   Gear,
   Bell,
   FileEarmarkPlus,
-  Person,
   Sun,
   MoonStars,
 } from "react-bootstrap-icons";
@@ -100,7 +98,7 @@ function Home({
           style={ObjectTheme}
         >
           <Offcanvas.Header closeButton>
-            <Offcanvas.Title>Silica Note</Offcanvas.Title>
+            <Offcanvas.Title>IRIS</Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav variant="pills" activeKey={active} className="flex-column">
@@ -118,7 +116,7 @@ function Home({
                 </Nav.Link>
               </Nav.Item>
               {/* Accordion */}
-              {/* <hr></hr>
+              <hr></hr>
               <Nav.Item onMouseEnter={() => onActiveNavLink("4")}>
                 <Accordion defaultActiveKey={["0"]} alwaysOpen>
                   <Accordion.Item eventKey="0">
@@ -131,7 +129,7 @@ function Home({
                   </Accordion.Item>
                 </Accordion>
                 <hr></hr>
-              </Nav.Item> */}
+              </Nav.Item>
               <hr></hr>
               <Nav.Item onMouseEnter={() => onActiveNavLink("5")}>
                 <Nav.Link className="nav-links" eventKey="5">
