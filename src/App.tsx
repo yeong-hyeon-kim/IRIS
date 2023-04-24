@@ -33,12 +33,6 @@ function App() {
 
   useEffect(() => {
     setScreenSize();
-
-    if (theme.value === "light") {
-      window.localStorage.setItem("theme", "light");
-    } else {
-      window.localStorage.setItem("theme", "dark");
-    }
   });
 
   return (
