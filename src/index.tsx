@@ -11,6 +11,7 @@ import createSagaMiddleware from "@redux-saga/core";
 import "bootstrap/dist/css/bootstrap.css";
 
 const sagaMiddleware = createSagaMiddleware();
+
 const store = configureStore({
   reducer: rootReducer,
   middleware: [sagaMiddleware],

@@ -11,8 +11,17 @@ let IntroduceContainer = () => {
   // 상태 조회
   const title = useSelector((state: RootState) => state.Introduce.title);
   const content = useSelector((state: RootState) => state.Introduce.content);
+  const container = useSelector(
+    (state: RootState) => state.Home.theme_container
+  );
 
-  return <Introduce title={title} content={content}></Introduce>;
+  return (
+    <Introduce
+      title={title}
+      content={content}
+      theme_container={container}
+    ></Introduce>
+  );
 };
 
 export default IntroduceContainer;

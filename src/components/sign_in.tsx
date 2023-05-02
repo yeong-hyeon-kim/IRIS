@@ -28,7 +28,7 @@ function SignIn() {
           <Form.Label>&nbsp; 로그인 유지</Form.Label>
         </InputGroup>
         <InputGroup className="mb-3">
-          <Form.Label>&copy; Silica</Form.Label>
+          <Form.Label>&copy; IRIS</Form.Label>
         </InputGroup>
         <InputGroup className="mb-3">
           <button className="w-100 btn btn-lg btn-primary" type="submit">

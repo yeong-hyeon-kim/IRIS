@@ -8,8 +8,11 @@ import Link from "../components/link";
 
 let LinkContainer = () => {
   const LinkList = useSelector((state: RootState) => state.Link.list);
+  const container = useSelector(
+    (state: RootState) => state.Home.theme_container
+  );
 
-  return <Link list={LinkList}></Link>;
+  return <Link list={LinkList} theme_container={container}></Link>;
 };
 
 export default LinkContainer;
