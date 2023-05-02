@@ -17,7 +17,7 @@ body {
 .List {
   /* --variable이 정의되지 않았다면 value로 표시 */
   /* var(--variable, value) */
-  height: calc((var(--vh, 1vh) * 100) - var(--nav, 1vh));
+  height: calc((var(--vh, 1vh) * 85) - var(--nav, 1vh));
   width: auto;
   overflow: auto;
 }
@@ -39,6 +39,11 @@ body {
   background-color: #fff;
   border-radius: 4px;
   padding: 4px;
+}
+
+.Copylight{
+  margin: 10px;
+  font-style: italic;
 }
 
 .Form-SignIn {

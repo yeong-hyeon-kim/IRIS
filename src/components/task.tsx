@@ -6,7 +6,16 @@ type StateSnapshot = {
 };
 
 function Task({ isDragging }: StateSnapshot) {
-  return <></>;
+  return (
+    <>
+      <footer>
+        <div className="Copylight">
+          <hr></hr>
+          Copyright (c) {new Date().getFullYear()} IRIS.
+        </div>
+      </footer>
+    </>
+  );
 }
 
 export default Task;

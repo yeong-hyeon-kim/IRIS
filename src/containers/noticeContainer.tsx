@@ -37,12 +37,17 @@ let NoticeContainer = () => {
   // }
 
   const NoticeList = useSelector((state: RootState) => state.Notice.list);
+  const container = useSelector(
+    (state: RootState) => state.Home.theme_container
+  );
+
   return (
     <Notice
       id={NoticeList[0].id}
       title={NoticeList[0].title}
       content={NoticeList[0].content}
       createDt={NoticeList[0].createDt}
+      theme_container={container}
     ></Notice>
   );
 };
