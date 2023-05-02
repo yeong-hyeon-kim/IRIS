@@ -1,6 +1,6 @@
-# 📕 실리카 노트(Silica Note)
+# 📕 IRIS
 
-* 리액트(React), 타입스크립트(Typescript)를 사용하여 Front-End를 작성합니다
+* 리액트 게시판 템플릿을 작성합니다.
 
 ## 🏷️ 기능(Function)
 
@@ -46,4 +46,4 @@
 
 ## 📖 비고(Remark)
 
-* 비고를 작성합니다.
+* [기본 템플릿(Template.React.TS)](https://github.com/yeong-hyeon-kim/Template.React.TS)
